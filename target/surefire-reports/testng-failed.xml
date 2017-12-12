@@ -8,6 +8,7 @@
           <include name="CreateUser"/>
           <include name="beforeTest"/>
           <include name="CreateProject"/>
+          <include name="afterTest"/>
           <include name="beforeMethod"/>
           <include name="getResult"/>
         </methods>

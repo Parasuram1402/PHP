@@ -1,12 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 11.161 s <<< FAILURE! - in TestSuite
-CreateUser(SeleniumTraining.PHP.PhPCollabTest)  Time elapsed: 2.161 s  <<< FAILURE!
-java.lang.NullPointerException
-	at SeleniumTraining.PHP.PhPCollabTest.CreateUser(PhPCollabTest.java:78)
-
-getResult(SeleniumTraining.PHP.PhPCollabTest)  Time elapsed: 2.162 s  <<< FAILURE!
-java.lang.NullPointerException
-	at SeleniumTraining.PHP.PhPCollabTest.getResult(PhPCollabTest.java:134)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 14.194 s <<< FAILURE! - in TestSuite
+CreateUser(SeleniumTraining.PHP.PhPCollabTest)  Time elapsed: 2.111 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at SeleniumTraining.PHP.PhPCollabTest.CreateUser(PhPCollabTest.java:82)
 

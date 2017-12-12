@@ -138,27 +138,24 @@ public void getResult(ITestResult result){
 	}else if(result.getStatus() == ITestResult.SKIP){
 		logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
 	}
-	// ending test
-	//endTest(logger) : It ends the current test and prepares to create HTML report
 	extent.endTest(logger);
 }
 
 @BeforeTest
 public void beforeTest() throws IOException {
-  file= new File("E:\\Murali Excers Training\\PhpCollab.xlsx");
+  file= new File(System.getProperty("user.dir") + "/data/PhpCollab.xlsx");
   extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
   extent
   .addSystemInfo("Host Name", "Excers Training")
   .addSystemInfo("Environment", "Automation Testing")
   .addSystemInfo("User Name", "Parasuram");
-  //loading the external xml file (i.e., extent-config.xml) which was placed under the base directory
-  //You could find the xml file below. Create xml file in your project and copy past the code mentioned below
+
   extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
   
   
   fis = new FileInputStream(file);
   workbook = new XSSFWorkbook(fis);		  
-  System.setProperty("webdriver.chrome.driver", "F:\\chromedriver\\chromedriver.exe");
+  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/resources/chromedriver.exe");
   driver=new ChromeDriver();
   driver.manage().window().maximize();
   driver.get("http://localhost/");
