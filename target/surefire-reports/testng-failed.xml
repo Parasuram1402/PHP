@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="SeleniumTraining.PHP.PhPCollabTest">
+        <methods>
+          <include name="CreateUser"/>
+          <include name="beforeTest"/>
+          <include name="CreateProject"/>
+          <include name="beforeMethod"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- SeleniumTraining.PHP.PhPCollabTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

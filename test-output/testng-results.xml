@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52568" started-at="2017-12-12T20:29:15Z" finished-at="2017-12-12T20:30:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52568" started-at="2017-12-12T20:29:15Z" finished-at="2017-12-12T20:30:07Z">
+      <class name="SeleniumTraining.PHP.PhPCollabTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="beforeTest" is-config="true" duration-ms="8904" started-at="2017-12-13T01:59:15Z" finished-at="2017-12-13T01:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2017-12-13T01:59:24Z" finished-at="2017-12-13T01:59:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void SeleniumTraining.PHP.PhPCollabTest.CreateUser() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CreateUser()[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="CreateUser" duration-ms="35964" started-at="2017-12-13T01:59:24Z" finished-at="2017-12-13T01:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-12-13T01:59:59Z" finished-at="2017-12-13T01:59:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void SeleniumTraining.PHP.PhPCollabTest.CreateProject() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-13T01:59:59Z" finished-at="2017-12-13T01:59:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateUser status=SUCCESS method=PhPCollabTest.CreateUser()[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="CreateProject()[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="CreateProject" duration-ms="6373" started-at="2017-12-13T01:59:59Z" depends-on-methods="SeleniumTraining.PHP.PhPCollabTest.CreateUser" finished-at="2017-12-13T02:00:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProject -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-13T02:00:06Z" finished-at="2017-12-13T02:00:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateProject status=SUCCESS method=PhPCollabTest.CreateProject()[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:SeleniumTraining.PHP.PhPCollabTest@22a637e7]" name="afterTest" is-config="true" duration-ms="1308" started-at="2017-12-13T02:00:06Z" finished-at="2017-12-13T02:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- SeleniumTraining.PHP.PhPCollabTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

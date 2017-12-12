@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 11.161 s <<< FAILURE! - in TestSuite
+CreateUser(SeleniumTraining.PHP.PhPCollabTest)  Time elapsed: 2.161 s  <<< FAILURE!
+java.lang.NullPointerException
+	at SeleniumTraining.PHP.PhPCollabTest.CreateUser(PhPCollabTest.java:78)
+
+getResult(SeleniumTraining.PHP.PhPCollabTest)  Time elapsed: 2.162 s  <<< FAILURE!
+java.lang.NullPointerException
+	at SeleniumTraining.PHP.PhPCollabTest.getResult(PhPCollabTest.java:134)
+
