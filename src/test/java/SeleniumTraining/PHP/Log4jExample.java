@@ -1,23 +1,32 @@
 package SeleniumTraining.PHP;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-
-import java.io.*;
-import java.sql.SQLException;
-import java.util.*;
 
 public class Log4jExample{
 
-   /* Get actual class name to be printed on */
-	
-   static Logger log = Logger.getLogger(Log4jExample.class.getName());
-   
-   public static void main(String[] args)throws IOException,SQLException{
-	   PropertyConfigurator.configure("F:\\Selenium_Workspace\\PHP\\log4j.properties");
-	   System.out.println(log);
-	   
-	   log.debug("Hello this is a debug message");
-      log.info("Hello this is an info message");
-   }
+	final static Logger logger = Logger.getLogger(Log4jExample.class);
+
+	public static void main(String[] args) {
+
+		Log4jExample obj = new Log4jExample();
+		obj.runMe("mkyong");
+
+	}
+
+	private void runMe(String parameter){
+
+		if(logger.isDebugEnabled()){
+			logger.debug("This is debug : " + parameter);
+		}
+
+		if(logger.isInfoEnabled()){
+			logger.info("This is info : " + parameter);
+		}
+
+		logger.warn("This is warn : " + parameter);
+		logger.error("This is error : " + parameter);
+		logger.fatal("This is fatal : " + parameter);
+
+	}
+
 }

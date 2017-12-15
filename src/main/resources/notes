@@ -1,0 +1,5 @@
+java -jar selenium-server-standalone-2.25.0.jar -port 4444 -role hub -nodeTimeout 1000
+
+
+java -jar D:\JAR\selenium-server-standalone-2.42.2.jar -role node -hub http://10.30.217.157:4444/grid/register -browser browserName = firefox -port 5555
+

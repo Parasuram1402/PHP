@@ -26,7 +26,7 @@ public class ExtentReportsClass{
                 .addSystemInfo("Host Name", "Excers Inc")
                 .addSystemInfo("Environment", "Selenium Training")
                 .addSystemInfo("User Name", "Parasuram");
-                extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+        extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 	}
 		
 	@Test
