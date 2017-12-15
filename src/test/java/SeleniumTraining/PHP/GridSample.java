@@ -52,7 +52,7 @@ public class GridSample {
          driver.manage().window().maximize();
       } else if (browser.equalsIgnoreCase("ie")) {
          System.out.println(" Executing on IE");
-         DesiredCapabilities cap = DesiredCapabilities.chrome();
+         DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
          cap.setBrowserName("ie");
          
          driver = new RemoteWebDriver(new URL(node), cap);
