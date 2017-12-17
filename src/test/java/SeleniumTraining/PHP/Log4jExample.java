@@ -9,7 +9,7 @@ public class Log4jExample{
 	public static void main(String[] args) {
 
 		Log4jExample obj = new Log4jExample();
-		obj.runMe("mkyong");
+		obj.runMe("Parasuram");
 
 	}
 

@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="SeleniumTraining.PHP.ExtentReportsClass">
+      <class name="SeleniumTraining.PHP.ExcelErrorTest">
         <methods>
-          <include name="skipTest"/>
-          <include name="failTest"/>
-          <include name="getResult"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
+          <include name="beforeTest"/>
+          <include name="newTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- SeleniumTraining.PHP.ExtentReportsClass -->
+      </class> <!-- SeleniumTraining.PHP.ExcelErrorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
