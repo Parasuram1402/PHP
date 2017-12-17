@@ -31,57 +31,36 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Extent Report</td><td class="numi">1</td><td class="numi">1</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">1.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">PHP Collab</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">16.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">1</td><td class="numi">1</td><td class="numi_attn">2</td><td class="numi_attn">2</td><td class="numi">16.0 seconds</td><td colspan="2">&nbsp;</td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Extent Report &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">SeleniumTraining.PHP.ExtentReportsClass</td><td><a href="#m1"><b>failTest</b>  </a></td><td class="numi">1</td><td>1513365888023</td><td class="numi">20</td></tr>
-<tr><th colspan="4">Extent Report &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">SeleniumTraining.PHP.ExtentReportsClass</td><td><a href="#m2"><b>skipTest</b>  </a></td><td class="numi">1</td><td>1513365888082</td><td class="numi">4</td></tr>
-<tr><th colspan="4">Extent Report &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">SeleniumTraining.PHP.ExtentReportsClass</td><td><a href="#m3"><b>passTest</b>  </a></td><td class="numi">1</td><td>1513365888074</td><td class="numi">0</td></tr>
-<tr><th colspan="4">PHP Collab &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">SeleniumTraining.PHP.PhPCollabTest</td><td><a href="#m4"><b>CreateUser</b>  </a></td><td class="numi">1</td><td>1513365899321</td><td class="numi">3213</td></tr>
-<tr><th colspan="4">PHP Collab &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">SeleniumTraining.PHP.PhPCollabTest</td><td><a href="#m5"><b>CreateProject</b>  </a></td><td class="numi">1</td><td>1513365902540</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">SeleniumTraining.PHP.DataProviderSample</td><td><a href="#m1"><b>setData</b>  </a></td><td class="numi">3</td><td>1513535329919</td><td class="numi">31</td></tr><tr class="passedodd"><td><a href="#m2"><b>setData</b>  </a></td><td class="numi">3</td><td>1513535329919</td><td class="numi">31</td></tr><tr class="passedodd"><td><a href="#m3"><b>setData</b>  </a></td><td class="numi">3</td><td>1513535329919</td><td class="numi">31</td></tr>
 </table>
-<h1>Extent Report</h1>
-<h2 id="m1">SeleniumTraining.PHP.ExtentReportsClass:failTest</h2>
-<div style="padding-left:3em">
-<p>expected [true] but found [false]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertTrue(Assert.java:42)
-<br/>at org.testng.Assert.assertTrue(Assert.java:52)
-<br/>at SeleniumTraining.PHP.ExtentReportsClass.failTest(ExtentReportsClass.java:42)
-<br/>21 lines not shown
-</div>
+<h1>Default test</h1>
+<h2 id="m1">SeleniumTraining.PHP.DataProviderSample:setData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>guestuser3</td>
+<td>pass123</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">SeleniumTraining.PHP.ExtentReportsClass:skipTest</h2>
-<div style="padding-left:3em">
-<p>Skipping - This is not ready for testing </p>
-SeleniumTraining.PHP.ExtentReportsClass.skipTest(ExtentReportsClass.java:49)
-<br/>21 lines not shown
-</div>
+<h2 id="m2">SeleniumTraining.PHP.DataProviderSample:setData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>sampleuser1</td>
+<td>abcdef</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">SeleniumTraining.PHP.ExtentReportsClass:passTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>PHP Collab</h1>
-<h2 id="m4">SeleniumTraining.PHP.PhPCollabTest:CreateUser</h2>
-<div style="padding-left:3em">
-<p>expected [true] but found [false]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertTrue(Assert.java:42)
-<br/>at org.testng.Assert.assertTrue(Assert.java:52)
-<br/>at SeleniumTraining.PHP.PhPCollabTest.CreateUser(PhPCollabTest.java:82)
-<br/>21 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">SeleniumTraining.PHP.PhPCollabTest:CreateProject</h2>
+<h2 id="m3">SeleniumTraining.PHP.DataProviderSample:setData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>testuser2</td>
+<td>zxcvb</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -3,7 +3,7 @@
 <suite name="Suite">
   
    <test name = "FirefoxTest">
-   <parameter name = "browser" value = "firefox" />
+   <parameter name = "browser" value = "firefox"/>
    <parameter name = "node" value="http://10.112.66.52:5555/wd/hub"/>
       <classes>
          <class name = "SeleniumTraining.PHP.GridSample" />

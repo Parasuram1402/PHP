@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="tests">
-  <test name="Extent Report(failed)" parallel="tests">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="SeleniumTraining.PHP.ExtentReportsClass">
         <methods>
@@ -12,35 +12,6 @@
           <include name="startReport"/>
         </methods>
       </class> <!-- SeleniumTraining.PHP.ExtentReportsClass -->
-      <class name="SeleniumTraining.PHP.PhPCollabTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- SeleniumTraining.PHP.PhPCollabTest -->
     </classes>
-  </test> <!-- Extent Report(failed) -->
-  <test name="PHP Collab(failed)" parallel="tests">
-    <classes>
-      <class name="SeleniumTraining.PHP.ExtentReportsClass">
-        <methods>
-          <include name="getResult"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
-        </methods>
-      </class> <!-- SeleniumTraining.PHP.ExtentReportsClass -->
-      <class name="SeleniumTraining.PHP.PhPCollabTest">
-        <methods>
-          <include name="CreateUser"/>
-          <include name="beforeTest"/>
-          <include name="CreateProject"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- SeleniumTraining.PHP.PhPCollabTest -->
-    </classes>
-  </test> <!-- PHP Collab(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="tests">
-  <test name="Extent Report(failed)" parallel="tests">
+  <parameter name="TestName" value="Test4"/>
+  <parameter name="node" value="http://localhost:5567/wd/hub"/>
+  <parameter name="browser" value="firefox"/>
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="TestName" value="Test2"/>
+    <parameter name="node" value="http://localhost:5567/wd/hub"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="SeleniumTraining.PHP.ExtentReportsClass">
+      <class name="SeleniumTraining.PHP.ParallelExecution">
         <methods>
-          <include name="skipTest"/>
-          <include name="failTest"/>
-          <include name="getResult"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
+          <include name="launch"/>
+          <include name="launch"/>
+          <include name="launch"/>
+          <include name="launch"/>
+          <include name="f"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- SeleniumTraining.PHP.ExtentReportsClass -->
-      <class name="SeleniumTraining.PHP.PhPCollabTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- SeleniumTraining.PHP.PhPCollabTest -->
+      </class> <!-- SeleniumTraining.PHP.ParallelExecution -->
     </classes>
-  </test> <!-- Extent Report(failed) -->
-  <test name="PHP Collab(failed)" parallel="tests">
+  </test> <!-- Test2(failed) -->
+  <test name="Test4(failed)" parallel="tests">
+    <parameter name="TestName" value="Test4"/>
+    <parameter name="node" value="http://localhost:5567/wd/hub"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="SeleniumTraining.PHP.ExtentReportsClass">
+      <class name="SeleniumTraining.PHP.ParallelExecution">
         <methods>
-          <include name="getResult"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
+          <include name="launch"/>
+          <include name="launch"/>
+          <include name="launch"/>
+          <include name="launch"/>
+          <include name="f"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- SeleniumTraining.PHP.ExtentReportsClass -->
-      <class name="SeleniumTraining.PHP.PhPCollabTest">
-        <methods>
-          <include name="CreateUser"/>
-          <include name="beforeTest"/>
-          <include name="CreateProject"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- SeleniumTraining.PHP.PhPCollabTest -->
+      </class> <!-- SeleniumTraining.PHP.ParallelExecution -->
     </classes>
-  </test> <!-- PHP Collab(failed) -->
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Suite] -->

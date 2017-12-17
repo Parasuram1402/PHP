@@ -34,13 +34,14 @@ public class ExtentReportsClass{
 		logger = extent.startTest("passTest");
 		Assert.assertTrue(true);
 		logger.log(LogStatus.PASS, "Test Case Passed is passTest");
+		logger.log(LogStatus.PASS, "Snapshot below: " + logger.addScreenCapture("E:\\pass.jpg"));
 	}
 	
 	@Test
 	public void failTest(){
 		logger = extent.startTest("failTest");
 		Assert.assertTrue(false);
-		logger.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
+
 	}
 	
 	@Test
@@ -54,8 +55,10 @@ public class ExtentReportsClass{
 		if(result.getStatus() == ITestResult.FAILURE){
 			logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
 			logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
+			logger.log(LogStatus.FAIL, "Snapshot below: " + logger.addScreenCapture("E:\\fail.jpg"));
 		}else if(result.getStatus() == ITestResult.SKIP){
 			logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
+			logger.log(LogStatus.SKIP, "Snapshot below: " + logger.addScreenCapture("E:\\skip.png"));
 		}
 		extent.endTest(logger);
 	}
